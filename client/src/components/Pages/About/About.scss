@@ -1,0 +1,56 @@
+@import "../../../css-config/mixins.scss";
+
+.about-page {
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      @include md {
+        font-size: 2.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      @include md {
+        font-size: 1.8rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      @include md {
+        font-size: 1.4rem;
+      }
+    }
+
+    address {
+      font-style: normal;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      @include md {
+        font-size: 1.4rem;
+      }
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include md {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../../css-config/mixins.scss";
+
+.contact-main-content {
+  padding: 40px 20px;
+
+  .layout {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .contact-info {
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.25rem;
+        @include md {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        @include md {
+          font-size: 1.4rem;
+        }
+      }
+
+      .contact-section {
+        margin-bottom: 2rem;
+
+        h3 {
+          font-size: 1.6rem;
+          margin-bottom: 0.75rem;
+          @include md {
+            font-size: 1.8rem;
+          }
+        }
+
+        p {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          margin-bottom: 0.5rem;
+          @include md {
+            font-size: 1.4rem;
+          }
+        }
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
