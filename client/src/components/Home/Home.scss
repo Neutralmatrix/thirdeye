@@ -3,6 +3,7 @@
 .main-content {
     max-width: calc(100% - 20px);
     margin: 0 auto;
+    user-select: none;
     @include md {
         max-width: 1200px;
     }

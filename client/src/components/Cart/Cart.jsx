@@ -1,17 +1,23 @@
+import { useNavigate } from "react-router-dom";
+import { Context } from "../../utils/context";
+import CartItem from "./CartItem/CartItem";
 import { MdClose } from "react-icons/md";
 import { BsCartX } from "react-icons/bs";
 import { useContext } from "react";
-import { Context } from "../../utils/context";
-import CartItem from "./CartItem/CartItem";
 import "./Cart.scss";
 
 const Cart = ({ setShowCart }) => {
     const { cartItems, cartSubtotal } = useContext(Context);
+    const navigate = useNavigate();
 
     const handleCloseCart = () => {
         if (!cartItems.length) {
             setShowCart(false);
         }
+    };
+
+    const handleCheckout = () => {
+        navigate("/checkout");
     };
 
     return (
@@ -45,7 +51,9 @@ const Cart = ({ setShowCart }) => {
                                 <div className="text total">&#8377;{cartSubtotal}</div>
                             </div>
                             <div className="button">
-                                <button className="checkout-cta">Checkout</button>
+                                <button className="checkout-cta" onClick={handleCheckout}>
+                                    Checkout
+                                </button>
                             </div>
                         </div>
                     </>

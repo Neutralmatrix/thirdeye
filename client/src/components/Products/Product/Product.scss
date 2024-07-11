@@ -16,14 +16,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
         @include md {
             height: 350px;
         }
 
         img {
-            transition: all ease 0.2s;
-            display: block;
+            transition: all ease 0.2s;            display: block;
             height: 100%;
+            
         }
     }
     

@@ -1,7 +1,7 @@
 @import "../../../css-config/mixins.scss";
 
 .privacy-policy-main-content {
-    padding: 50px 20px;
+  padding: 50px 20px;
     background-color: #ffffff;
   
     .layout {
@@ -53,4 +53,8 @@
       }
     }
   }
+  .privacy-policy-main-content ::selection {
+    background-color: rgb(255, 157, 0);
+    color: white;
+}
   

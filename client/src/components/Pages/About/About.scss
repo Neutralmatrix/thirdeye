@@ -54,3 +54,8 @@
     padding: 30px;
   }
 }
+
+.about-page ::selection {
+  background-color: rgb(255, 157, 0);
+  color: white;
+}
